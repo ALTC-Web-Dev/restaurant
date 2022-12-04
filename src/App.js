@@ -8,9 +8,9 @@ export default function App() {
   return (
     <Layout>
       <Main />
-      {/* <Menu /> */}
-      {/* <Reviews /> */}
-      {/* <Tradition /> */}
+      <Menu />
+      <Reviews />
+      <Tradition />
     </Layout>
   );
 }
