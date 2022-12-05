@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function ContactForm() {
   return (
-    <div className="lg:px-32 md:px-20 px-4 pt-20 mb-10 flex justify-around items-center ">
+    <div className="lg:px-32 md:px-20 px-4 pt-32 mb-10 flex justify-around items-center">
       <img
         src="/asset/contact.png"
         alt="Frying with wok"

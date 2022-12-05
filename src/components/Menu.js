@@ -4,7 +4,7 @@ import { menuInfo } from "../lib/menuInfo";
 
 export default function Menu() {
   return (
-    <section className="lg:px-32 md:px-20 px-4 bg-hero bg-cover bg-no-repeat min-h-full flex flex-col justify-center items-center">
+    <section className="lg:px-32 md:px-20 px-4 pb-10 bg-hero bg-cover bg-no-repeat min-h-full flex flex-col justify-center items-center">
       <div className="flex flex-col items-center lg:flex-row justify-around flex-wrap lg:w-9/12 w-full py-10 mb-20">
         <img
           src="/asset/noodles.png"

@@ -2,7 +2,7 @@ import { salad, appetizers, soups, noodleRice, dessert } from "../lib/menuFull";
 
 export default function Menu() {
   return (
-    <div className="bg-menu bg-no-repeat bg-cover min-w-full flex justify-center mt-20">
+    <div className="bg-menu bg-no-repeat bg-cover min-w-full flex justify-center pt-32">
       <div className="bg-white rounded-lg w-full lg:w-4/12 flex flex-col gap-y-8 mx-4 mb-20">
         <div className="flex flex-col gap-y-4 p-8">
           <h2 className="text-amber-700 font-title font-semibold uppercase text-xl">

@@ -2,11 +2,19 @@ import { Fragment } from "react";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Popover, Transition } from "@headlessui/react";
+import { useLocation } from "react-router-dom";
 
 export default function Navbar() {
+  const path = useLocation().pathname;
+  const menu = "/menu";
+  const contact = "/contact";
+
+  console.log(path);
+
   return (
     <Popover>
-      <div className="min-w-full bg-white flex justify-between items-center lg:px-32 md:px-10 px-4 py-4 drop-shadow-sm">
+      {/* Desktop nav */}
+      <div className="min-w-full bg-white flex justify-between items-center lg:px-32 md:px-10 px-4 py-4 drop-shadow-sm fixed z-50 top-0">
         <Link to="/">
           <img src="/asset/logo.png" alt="Logo" className="w-40" />
         </Link>
@@ -17,8 +25,22 @@ export default function Navbar() {
           </Popover.Button>
         </div>
         <div className="hidden lg:flex lg:gap-x-6">
-          <Link to="menu">Menu</Link>
-          <Link to="contact">Contact Us</Link>
+          <Link
+            to="menu"
+            className={
+              `${path}` === `${menu}` ? `text-amber-700` : `text-neutral-900`
+            }
+          >
+            Menu
+          </Link>
+          <Link
+            to="contact"
+            className={
+              `${path}` === `${contact}` ? `text-amber-700` : `text-neutral-900`
+            }
+          >
+            Contact Us
+          </Link>
         </div>
         <button className="hidden lg:flex lg:justify-between lg:w-[180px] lg:py-2 lg:px-4 lg:bg-amber-700 lg:text-white lg:font-title">
           Book a Table
