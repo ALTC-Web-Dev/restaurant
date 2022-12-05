@@ -1,16 +1,17 @@
-import Main from "./components/Main";
-import Menu from "./components/Menu";
-import Reviews from "./components/Reviews";
 import Layout from "./components/shared/Layout";
-import Tradition from "./components/Tradition";
+import Home from "./pages/Home";
+import Menu from "./pages/Menu";
+import Contact from "./pages/Contact";
+import { Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
     <Layout>
-      <Main />
-      <Menu />
-      <Reviews />
-      <Tradition />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="menu" element={<Menu />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
     </Layout>
   );
 }

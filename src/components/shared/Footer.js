@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -6,8 +7,8 @@ export default function Footer() {
       <div className="flex flex-col lg:flex-row  gap-y-6 justify-between items-center">
         <img src="asset/logo.png" alt="Logo" className="w-40" />
         <div className="flex gap-x-8">
-          <p>Menu</p>
-          <p>Contact Us</p>
+          <Link to="menu">Menu</Link>
+          <Link to="contact">Contact Us</Link>
         </div>
         <div className="flex gap-x-6">
           <div className="p-2 rounded-full text-white bg-[#CA8E74]">
