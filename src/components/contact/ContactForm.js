@@ -1,12 +1,15 @@
 import { ArrowRight } from "lucide-react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function ContactForm() {
   return (
     <div className="lg:px-32 md:px-20 px-4 pt-32 mb-10 flex justify-around items-center">
-      <img
-        src="/asset/contact.png"
+      <LazyLoadImage
+        src="/asset/contact.webp"
         alt="Frying with wok"
         className="lg:w-4/12 lg:block hidden"
+        width={386}
+        height={416}
       />
       <div className="lg:px-10 flex flex-col justify-center w-full lg:w-6/12">
         <h1 className="font-title text-amber-700 text-2xl font-semibold mb-4">

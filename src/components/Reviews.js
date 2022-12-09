@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { reviews } from "../lib/reviews";
 
 export default function Reviews() {
@@ -12,7 +13,12 @@ export default function Reviews() {
             key={item.id}
             className="border border-amber-700 rounded-md bg-white text-amber-700 px-8 py-10 flex flex-col justify-center items-center gap-y-6 w-[350px] h-[500px]"
           >
-            <img src={item.img} alt={item.img} />
+            <LazyLoadImage
+              src={item.img}
+              alt={item.img}
+              width={120}
+              height={120}
+            />
             {item.stars}
             <p>{item.review}</p>
           </div>

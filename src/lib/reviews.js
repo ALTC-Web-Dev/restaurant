@@ -3,7 +3,7 @@ import { Star } from "lucide-react";
 export const reviews = [
   {
     id: 1,
-    img: "asset/review1.png",
+    img: "asset/review1.webp",
     stars: (
       <div className="flex gap-x-4">
         <Star />
@@ -18,7 +18,7 @@ export const reviews = [
   },
   {
     id: 2,
-    img: "asset/review2.png",
+    img: "asset/review2.webp",
     stars: (
       <div className="flex gap-x-4">
         <Star />
@@ -32,7 +32,7 @@ export const reviews = [
   },
   {
     id: 3,
-    img: "asset/review3.png",
+    img: "asset/review3.webp",
     stars: (
       <div className="flex gap-x-4">
         <Star />

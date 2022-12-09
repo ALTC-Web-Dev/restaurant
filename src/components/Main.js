@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Main() {
   return (
@@ -31,10 +32,12 @@ export default function Main() {
             </div>
           </div>
         </div>
-        <img
-          src="/asset/hero.png"
+        <LazyLoadImage
+          src="/asset/hero.webp"
           alt="Main collage"
           className="hidden lg:block lg:w-5/12 md:w-3/5"
+          width={480}
+          height={516}
         />
       </div>
     </main>

@@ -3,6 +3,7 @@ import { ArrowRight, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Popover, Transition } from "@headlessui/react";
 import { useLocation } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Navbar() {
   const path = useLocation().pathname;
@@ -16,7 +17,12 @@ export default function Navbar() {
       {/* Desktop nav */}
       <div className="min-w-full bg-white flex justify-between items-center lg:px-32 md:px-10 px-4 py-4 drop-shadow-sm fixed z-50 top-0">
         <Link to="/">
-          <img src="/asset/logo.png" alt="Logo" className="w-40" />
+          <LazyLoadImage
+            src="/asset/logo.png"
+            alt="Logo"
+            width={140}
+            height={30}
+          />
         </Link>
         <div className="-mr-2 flex items-center lg:hidden">
           <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 hover:bg-amber-100 hover:text-amber-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-700">
@@ -65,7 +71,12 @@ export default function Navbar() {
           <div className="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-amber-700 ring-opacity-10">
             <div className="flex items-center justify-between px-5 pt-2">
               <Link to="/">
-                <img src="/asset/logo.png" alt="Logo" className="w-40" />
+                <LazyLoadImage
+                  src="/asset/logo.png"
+                  alt="Logo"
+                  width={140}
+                  height={30}
+                />
               </Link>
               <div className="-mr-2">
                 <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-amber-700 hover:bg-amber-100 hover:text-amber-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-700">

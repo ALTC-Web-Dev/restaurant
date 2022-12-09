@@ -23,7 +23,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-amber-700 text-sm text-center mt-8">
-        Copyright 2022 by Thai Phuket. All rights reserved.
+        Copyright &#169; 2022 by Thai Phuket. All rights reserved.
       </div>
     </footer>
   );

@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        hero: "url('../public/asset/ingredients-bg.png')",
-        menu: "url('../public/asset/menu-bg.jpeg')",
+        hero: "url('../public/asset/ingredients-bg.webp')",
+        menu: "url('../public/asset/menu-bg.webp')",
       },
       fontFamily: {
         sans: ["Lato", ...defaultTheme.fontFamily.sans],

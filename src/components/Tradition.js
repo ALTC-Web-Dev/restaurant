@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 
 export default function Tradition() {
@@ -21,10 +22,12 @@ export default function Tradition() {
           </Link>
         </div>
 
-        <img
-          src="asset/footer.png"
+        <LazyLoadImage
+          src="asset/footer.webp"
           alt="Thai tradition"
           className="mt-10 ml-10"
+          width={496}
+          height={438}
         />
       </div>
     </section>
